@@ -1,3 +1,12 @@
 body {
-    
+    background-color: saddlebrown;
+    font-family: 'Roboto', sans-serif;
+    padding: 10%;
+}
+button {
+    color: white;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 50%;
 }
