@@ -6,24 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cookies</title>
     <link rel = "stylesheet"  type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <h1 id="cookie-counter">0</h1>
-    <h4>Click me<br> <button id="cookie-clicker">Bake some Cookies!</button>
-    </h4>
+    <h2>Click the cookie</h2> 
+    <button id="cookie-clicker">
+        <img src="cookie.png" alt="cookie">
+    </button>
+    <label class="label-cookie">Score: <span class="label-cookie" id="display-counter">0</span> cookies</label>
     <hr>
-    <h3>Buy cookies </h3>
+    <label class="label-cookie" id="multiplier-cookie">20 <span class="label-cookie ml-2">Cookies</span></label>
+    <button type="button" class="btn btn-success label-cookie" id="btn-multiplier">Buy 2x multiplier</button>
     <hr>
-    <h4>Click multiplier</h4>
-    <p>Bake<span id="click-multipler">1</span> cookie(s) per click</p>
-    <h4><button id="buy-multiplier">Buy for <span id="click-multiplier">20</span></button> <br>
-    Level: <span id="click-level">1</span></h4>
-    <hr>
-    <h3>Grannies</h3>
-    <h4>Baking<span id="granny-multipler">0</span> cookies per second<br>
-    <button id="buy-grannies">Buy for <span id="granny-price">1000</span></button> <br>
-    Level: <span id="granny-level">0</span></h4>
-     <script src="./script.js"></script>
+    <label class="label-cookie" id="autoclick-cookie">80 <span class="label-cookie ml-2">Cookies</span></label>
+    <button type="button" class="btn btn-success label-cookie" id="btn-autoclick">Buy autoclick after 1 seconds</button>
+    <script src="main.js"></script>    
 </body>
 </html>
