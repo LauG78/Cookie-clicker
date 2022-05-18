@@ -44,6 +44,38 @@ autobtn.addEventListener("click", () => {
         alert("Bake more cookies");
     }
 })
+let bonusbtn = document.getElementById("btn-bonus");
+let bonusCookie = document.getElementById("bonus-cookie");
+
+let bonusPrice = parseInt(bonusCookie.innerHTML);
+let bonusTime = document.getElementById("bonus-time");
+let bonusTimer = parseInt(bonusTime.innerHTML);
+bonusbtn.addEventListener("click", () => {
+    if (score >= bonusPrice) {
+        score -= bonusPrice;
+        cookieScore.innerHTML = score;
+        bonusPrice *= 2;
+        bonusCookie.innerHTML = bonusPrice + " Cookies";
+        counter *= 2;
+        console.log(counter)
+        let bonusCounter = setInterval(timer, 1000);
+        console.log(bonusCounter);
+
+        function timer() {
+            if (bonusTimer > 0) {
+                bonusTimer -= 1;
+                bonusTime.innerHTML = bonusTimer;
+            } else {
+                clearInterval(bonusCounter);
+                bonusTimer = "30";
+                bonusTime.innerHTML = bonusTimer;
+                counter /= 2;
+            }
+        }
+    } else {
+        alert("Bake more cookies");
+    }
+})
 
 
 

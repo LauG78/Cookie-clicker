@@ -12,6 +12,6 @@ button {
     padding: 15px;
     width: 50%;
 }
-#btn-multiplier, #btn-autoclick{
+#btn-multiplier, #btn-autoclick, #btn-bonus{
     background-color: blueviolet;
 }
